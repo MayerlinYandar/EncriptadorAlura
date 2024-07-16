@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    //Variables
     let textarea = document.getElementById('toEncryptDecrypt');
     let encryptButton = document.getElementById('encrypt');
     let decryptButton = document.getElementById('decrypt');
@@ -9,10 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
     let resultEncriptDecrypt = document.getElementById('resultEncriptDecrypt');
 
 
-    /**
-     * Maneja el evento de clic en el botón de encriptar.
-     * Realiza la encriptación del texto ingresado, muestra el resultado y oculta el contenido predeterminado.
-     */
     encryptButton.addEventListener('click', function () {
         if (!textarea.value.trim()) {
             return
@@ -27,10 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 
-    /**
-     * Maneja el evento de clic en el botón de desencriptar.
-     * Realiza la desencriptación del texto ingresado, muestra el resultado y oculta el contenido predeterminado.
-     */
     decryptButton.addEventListener('click', function () {
         if (!textarea.value.trim()) {
             return
@@ -45,44 +36,28 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-    /**
-     * Encripta un texto según las reglas dadas.
-     * 
-     * @param {string} text - El texto que se va a encriptar.
-     * @returns {string} - El texto encriptado.
-     */
     function encryptText(text) {
         let encryptedText = text;
 
+        encryptedText = encryptedText.replace(/a/g, 'ai');
         encryptedText = encryptedText.replace(/e/g, 'enter');
         encryptedText = encryptedText.replace(/i/g, 'imes');
-        encryptedText = encryptedText.replace(/a/g, 'ai');
         encryptedText = encryptedText.replace(/o/g, 'ober');
         encryptedText = encryptedText.replace(/u/g, 'ufat');
         return encryptedText;
     }
 
-    /**
-     * Desencripta un texto encriptado según las reglas dadas.
-     * 
-     * @param {string} encryptedText - El texto encriptado que se va a desencriptar.
-     * @returns {string} - El texto desencriptado.
-     */
     function decryptText(encryptedText) {
         let decryptedText = encryptedText;
 
+        decryptedText = decryptedText.replace(/ai/g, 'a');
         decryptedText = decryptedText.replace(/enter/g, 'e');
         decryptedText = decryptedText.replace(/imes/g, 'i');
-        decryptedText = decryptedText.replace(/ai/g, 'a');
         decryptedText = decryptedText.replace(/ober/g, 'o');
         decryptedText = decryptedText.replace(/ufat/g, 'u');
         return decryptedText;
     }
 
-
-    /**
-     * Maneja el evento de clic en el botón de copiar, copiando el texto al portapapeles.
-     */
     copyButton.addEventListener('click', function () {
         var textoCopiar = resultEncriptDecrypt.textContent;
 
