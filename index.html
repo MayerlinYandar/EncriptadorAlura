@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/img/icon_app.svg" >
+
+    <script src="/js/app.js" defer></script>
+    <title>Reto Challenge</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="controls">
+            <div class="controls__icon">
+                <img class="icon" src="/img/icon_app.svg" alt="Icono">
+            </div>
+            <div class="controls__input">
+                <textarea id="toEncryptDecrypt" class="input__textarea" rows="4" cols="50"
+                    placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+
+            <div class="buttons">
+                <img class="img-alert" src="/img/icon_alert.svg" alt="">
+                <div class="controls__buttons">
+                    <button id="encrypt" class="buttons__button encrypt">Encriptar</button>
+                    <button id="decrypt" class="buttons__button decrypt">Desencriptar</button>
+                </div>
+            </div>
+            <div class="pie-pagina">
+                <a href="https://github.com/MayerlinYandar" target="_blank" rel="noopener noreferrer"><img src="./img/github.png" class="pgn" alt="icono GitHub"></a>
+                <p> Oracle - AluraLatam. 2024 </p>
+                <a href="https://www.linkedin.com/in/mayerlin-yandar/" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.png" class="pgn" alt="icono Linkedin"></a>
+            </div>
+        </div>
+
+        <div class="results">
+
+            <div id="resultdefault" class="textoutput__textoutput-results">
+                <div class="textoutput-results__content">
+                    <img src="/img/results_image.svg" alt="Descripción de la imagen">
+                    <h2 id="resultTitle">Ningún mensaje fue encontrado</h2>
+                    <p id="resultText">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+
+            <div id="result" class="textoutput__textoutput-results isOcult">
+                <div class="textoutput-results__content">
+                    <p id="resultEncriptDecrypt" class="expandible">Texto</p>
+                    <button class="buttons__button copy" id="copyButton">Copiar</button>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+
+</html>
