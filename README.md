@@ -24,4 +24,10 @@ La aplicación realiza las siguientes transformaciones en el texto ingresado:
 
 ## Cómo usar
 
-1. Ingrese el texto que desea encripta
+1. Ingrese el texto que desea encriptar o desencriptar en el campo de texto proporcionado.
+2. Presione el botón "Encriptar" para encriptar el texto.
+3. Presione el botón "Desencriptar" para desencriptar el texto.
+4. El resultado se mostrará en el área de texto designada para el texto encriptado/desencriptado.
+5. Puede copiar el texto encriptado/desencriptado presionando el botón "Copiar".
+
+
