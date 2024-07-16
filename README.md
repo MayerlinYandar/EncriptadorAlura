@@ -8,6 +8,7 @@ EncriptadorAlura es una aplicación web que permite encriptar y desencriptar tex
 
 La aplicación realiza las siguientes transformaciones en el texto ingresado:
 
+
 - `a` se reemplaza por `ai`
 - `e` se reemplaza por `enter`
 - `i` se reemplaza por `imes`
@@ -15,6 +16,7 @@ La aplicación realiza las siguientes transformaciones en el texto ingresado:
 - `u` se reemplaza por `ufat`
 
 ## Elementos principales de la página
+
 
 - **Título de su sitio web**: Encriptador | Oracle+AluraLATAM
 - **Campo para el texto que va a ser encriptado/desencriptado**: Un área de texto donde los usuarios pueden ingresar el texto que desean encriptar o desencriptar.
@@ -30,4 +32,8 @@ La aplicación realiza las siguientes transformaciones en el texto ingresado:
 4. El resultado se mostrará en el área de texto designada para el texto encriptado/desencriptado.
 5. Puede copiar el texto encriptado/desencriptado presionando el botón "Copiar".
 
+Imagen de prueba al iniciar.
+<img width="1432" alt="Screenshot 2024-07-16 at 5 42 09 PM" src="https://github.com/user-attachments/assets/5f9ca671-893d-4112-9a5c-0f5179f9a722">
 
+Al desencriptar
+<img width="1421" alt="Screenshot 2024-07-16 at 5 42 17 PM" src="https://github.com/user-attachments/assets/671a8272-8b17-44cb-aa9e-58e0e557273f">
